@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EventPlanner.MainPage">
-
+             x:Class="EventPlanner.Events"
+             Title="Events">
     <ScrollView
         BackgroundColor="#fefeff">
         <VerticalStackLayout
@@ -43,24 +43,25 @@
                 </ListView.Header>
             </ListView>
             <ImageButton
-                Source="ID2.png"
+                Source="ID.png"
                 HeightRequest="200"
                 HorizontalOptions="Center"
                 Clicked="ToHome"/>
-            <Label
-                Text="Welcome to ID Event Planner"
-                SemanticProperties.HeadingLevel="Level2"
+            <Button Text="EVENT 1 - BERN - TBA"
                 TextColor="Black"
-                FontSize="26"
-                HorizontalOptions="Center" />
-            <Button
-                x:Name="COOPBtn"
-                BackgroundColor="#e20512"
+                FontSize="35"
+                HorizontalOptions="Start"
+                Clicked="ToEventBE"/>
+            <Button Text="EVENT 2 - ZURICH - TBA"
                 TextColor="Black"
-                Text="Login Using COOP IDP"
-                Clicked="ToEvents"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"/>
+                FontSize="35"
+                HorizontalOptions="Start"
+                Clicked="ToEventBE"/>
+            <Button Text="Add a new event"
+                TextColor="Black"
+                FontSize="35"
+                HorizontalOptions="Start"
+                Clicked="ToAddEvent"/>
             <ListView
                 BackgroundColor="#e20512"
                 MaximumHeightRequest="150">
@@ -83,4 +84,3 @@
     </ScrollView>
 
 </ContentPage>
-

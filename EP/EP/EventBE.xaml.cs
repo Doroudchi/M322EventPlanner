@@ -1,9 +1,8 @@
 namespace EventPlanner;
 
-public partial class MainPage : ContentPage
+public partial class EventBE : ContentPage
 {
-
-	public MainPage()
+	public EventBE()
 	{
 		InitializeComponent();
 	}
@@ -36,5 +35,3 @@ public partial class MainPage : ContentPage
         string text = ((Entry)sender).Text;
     }
 }
-
-

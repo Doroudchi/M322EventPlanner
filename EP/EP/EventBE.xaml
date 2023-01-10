@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EventPlanner.MainPage">
-
-    <ScrollView
+             x:Class="EventPlanner.EventBE"
+             Title="EventBE">
+<ScrollView
         BackgroundColor="#fefeff">
         <VerticalStackLayout
             Spacing="25"
@@ -45,8 +45,7 @@
             <ImageButton
                 Source="ID2.png"
                 HeightRequest="200"
-                HorizontalOptions="Center"
-                Clicked="ToHome"/>
+                HorizontalOptions="Center"/>
             <Label
                 Text="Welcome to ID Event Planner"
                 SemanticProperties.HeadingLevel="Level2"
@@ -58,7 +57,6 @@
                 BackgroundColor="#e20512"
                 TextColor="Black"
                 Text="Login Using COOP IDP"
-                Clicked="ToEvents"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"/>
             <ListView
@@ -81,6 +79,4 @@
             </ListView>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
-
