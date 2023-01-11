@@ -34,4 +34,10 @@ public partial class EventBE : ContentPage
     {
         string text = ((Entry)sender).Text;
     }
+    void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+    {
+        double value = args.NewValue;
+        slider.Value = value;
+        displayLabel.Text = String.Format("You rated this meeting a {0}", value);
+    }
 }

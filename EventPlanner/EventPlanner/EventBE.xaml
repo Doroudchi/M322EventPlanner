@@ -43,22 +43,56 @@
                 </ListView.Header>
             </ListView>
             <ImageButton
-                Source="ID2.png"
+                Source="ID.png"
                 HeightRequest="200"
-                HorizontalOptions="Center"/>
-            <Label
-                Text="Welcome to ID Event Planner"
-                SemanticProperties.HeadingLevel="Level2"
-                TextColor="Black"
-                FontSize="26"
-                HorizontalOptions="Center" />
-            <Button
-                x:Name="COOPBtn"
-                BackgroundColor="#e20512"
-                TextColor="Black"
-                Text="Login Using COOP IDP"
                 HorizontalOptions="Center"
-                VerticalOptions="Center"/>
+                Clicked="ToHome"/>
+            <Grid
+                VerticalOptions="Center">
+                <Button Text="EVENT 1 - BERN - TBA"
+                    TextColor="#e20512"
+                    FontSize="35"
+                    HorizontalOptions="Start"/>
+                <Label Text="Location: TBA
+                       Time: TBA"
+                    TextColor="Black"
+                    FontSize="20"
+                    HorizontalOptions="End"/>
+                </Grid>
+            <Label Text="This here is the event details, it can be as long as you want it to be but I really lack the imagination to actually write a long text.
+                    So what I'm gonna do is to cut this off here."
+                TextColor="Black"
+                FontSize="20"
+                HorizontalOptions="Start"/>
+            <Grid>
+                    <Grid
+                    VerticalOptions="Center">
+                    <Label Text="Are you attending?"
+                        TextColor="Black"
+                        FontSize="20"
+                        HorizontalOptions="Start"/>
+                    <Switch x:Name="switch"
+                            IsToggled="false"
+                            HorizontalOptions="End"
+                            ThumbColor="White"
+                            OnColor="#e20512"/>
+                </Grid>
+                <Grid
+                    VerticalOptions="Center">
+                    <Label x:Name="displayLabel"
+                        Text="Rate the meeting:"
+                        HorizontalOptions="Start"
+                        TextColor="Black"/>
+                    <Slider x:Name="slider"
+                        Margin="0,0,1000,0"
+                        HorizontalOptions="End"
+                        Maximum="10"
+                        Minimum="1"
+                        ValueChanged="OnSliderValueChanged"
+                        ThumbColor="#e20512"
+                        BackgroundColor="Black"/>
+                </Grid>
+                </Grid>
             <ListView
                 BackgroundColor="#e20512"
                 MaximumHeightRequest="150">
@@ -79,4 +113,5 @@
             </ListView>
         </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>
