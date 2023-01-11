@@ -42,25 +42,37 @@
                     </StackLayout>
                 </ListView.Header>
             </ListView>
-            <ImageButton
-                Source="ID2.png"
-                HeightRequest="200"
-                HorizontalOptions="Center"
-                Clicked="ToHome"/>
-            <Label
-                Text="Welcome to ID Event Planner"
-                SemanticProperties.HeadingLevel="Level2"
-                TextColor="Black"
-                FontSize="26"
-                HorizontalOptions="Center" />
-            <Button
-                x:Name="COOPBtn"
-                BackgroundColor="#e20512"
-                TextColor="Black"
-                Text="Login Using COOP IDP"
-                Clicked="ToEvents"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"/>
+
+            <Label Text="Add an Event"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label Text="Location Dropdown"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label Text="Date Picker"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label Text="Manadatory tick"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label Text="Description text"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
+            <Label Text="Submit Button"
+                TextColor="#c893f2"
+                FontFamily="Ubuntu"
+                FontSize="40"
+                HorizontalOptions="Center"/>
             <ListView
                 BackgroundColor="#e20512"
                 MaximumHeightRequest="150">
